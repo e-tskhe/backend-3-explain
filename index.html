@@ -5,29 +5,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Объяснение задания 3</title>
 </head>
+
+<style>
+    body {
+        margin-left: 3pt;
+    }
+    img {
+        width: 1000px;
+    }
+</style>
+
 <body>
     <h2>
-
+        Запускаем клиент и подключаемся к БД
     </h2>
     <img src="img/login to sql.jpg">
+    <p>
+        Используем команду mysql -uu'login' -p'password' u'login'
+    </p>
+
+    <h2>
+        Создаем 3 таблицы: application с основной информацией из анкеты, programming_language, в которой хранятся
+        языки программирования и их ID, application_language, связывающую application с programming_language
+    </h2>
+    <img src="img/creating tables.jpg">
+    <p>
+        Для создания таблиц используем команду CREATE TABLE имя таблицы (параметры);<br>
+        Первичные ключи (ID) заполняются автоматически (AUTO-INCREMENT).
+    </p>
+
+    <h2>
+
+    <h2>
+        Структура таблиц
+    </h2>
+    <img src="img/table structure.jpg">
     <p>
         
     </p>
 
     <h2>
-
-    </h2>
-    <img src="img/creating tables.jpg">
-    <p>
-
-    </p>
-
-    <h2>
-
+        Вставляем в таблицу programming_language все языки программирования из формы
     </h2>
     <img src="img/insert into table.jpg">
     <p>
-
+        Для этого используем команду INSERT INTO имя таблицы (имена полей) VALUES (значения);
     </p>
 </body>
 </html>
